@@ -1,0 +1,20 @@
+{
+  "name": "Property Listing CRM",
+  "short_name": "CRM",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0A2463",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/askalnagala/icon-512.png/main/android-chrome-192x192-Property_Listing_Cavite.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/askalnagala/icon-512.png/main/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
