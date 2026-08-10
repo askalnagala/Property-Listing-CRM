@@ -1,18 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Property Listing CRM</title>
-  <link rel="manifest" href="https://askalnagala.github.io/Property-Listing-CRM/manifest.json">
-  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
-  <link rel="apple-touch-icon" href="images/android-chrome-512x512.png">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
   <meta name="theme-color" content="#0A2463">
+
+  <meta
+    name="mobile-web-app-capable"
+    content="yes"
+  >
+
+  <meta
+    name="apple-mobile-web-app-capable"
+    content="yes"
+  >
+
+  <meta
+    name="apple-mobile-web-app-status-bar-style"
+    content="black-translucent"
+  >
+
+  <meta
+    name="apple-mobile-web-app-title"
+    content="Property CRM"
+  >
+
+  <title>Property Listing CRM</title>
+
+
+  <!-- PWA -->
+  <link
+    rel="manifest"
+    href="/Property-Listing-CRM/manifest.json"
+  >
+
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="192x192"
+    href="/Property-Listing-CRM/images/android-chrome-192x192.png"
+  >
+
+
+  <!-- iOS Home Screen -->
+  <link
+    rel="apple-touch-icon"
+    sizes="512x512"
+    href="/Property-Listing-CRM/images/android-chrome-512x512.png"
+  >
+
+
   <style>
-    html, body, iframe { margin:0; padding:0; height:100%; width:100%; border:none; }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #0A2463;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+    }
+
   </style>
+
 </head>
+
 <body>
- <iframe src="https://script.google.com/macros/s/AKfycbwcY7FwcEVnUb5dNf7jlszVtpH6B4e2pFgGjIBfwi-r-213oHEbcIVx-Qu2MtNRtn9i8g/exec"></iframe>
+
+  <iframe
+    id="crmFrame"
+    src="https://script.google.com/macros/s/AKfycbwcY7FwcEVnUb5dNf7jlszVtpH6B4e2pFgGjIBfwi-r-213oHEbcIVx-Qu2MtNRtn9i8g/exec"
+    title="Property Listing CRM"
+    allow="clipboard-read; clipboard-write"
+    referrerpolicy="strict-origin-when-cross-origin"
+  ></iframe>
+
+
+  <script>
+
+    const iframe = document.getElementById("crmFrame");
+
+    iframe.addEventListener("load", function () {
+      console.log("Property Listing CRM loaded.");
+    });
+
+  </script>
+
 </body>
 </html>
